@@ -96,4 +96,4 @@ Content/
 
 ---
 
-[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](00-Changelog.md) · [Next →](02-Mod-Installation.md)
+[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](00-Changelog.md) · [Next →](02-ModLoader-Installation.md)
