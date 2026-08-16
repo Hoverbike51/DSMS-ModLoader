@@ -388,4 +388,4 @@ The fragment above documents the two arrays; it is not a complete preset by itse
 
 ---
 
-[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](04-Creating-json.md) · [Next →](06-Troubleshooting.md)
+[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](04-Creating-JSON-presets.md) · [Next →](06-Troubleshooting.md)
