@@ -118,4 +118,4 @@ Proceed step by step. Most often, this error is caused by the way the JSON file 
 
 ---
 
-[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](05-Creating-Advanced-json.md)
+[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](05-Creating-Advanced-JSON-presets.md)
