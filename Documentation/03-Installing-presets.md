@@ -52,4 +52,4 @@ Copy the template and rename it to a filename such as `DSMS-ModAuthor-Character-
 ---
 
 
-[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](02-Mod-Installation.md) · [Next →](04-Creating-json.md)
+[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](02-ModLoader-Installation.md) · [Next →](04-Creating-JSON-presets.md)
