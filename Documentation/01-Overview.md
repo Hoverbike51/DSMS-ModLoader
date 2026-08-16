@@ -33,12 +33,6 @@ DSMS-
 DS\Content\Paks\~mods\HMV_DS_SELECTOR\
 ```
 
-### Unreal mod root
-
-```text
-/Game/MODS/Mod_Author/Mod_Name/
-```
-
 ### PAK filename prefix
 
 ```text
