@@ -578,4 +578,4 @@ Include a short readme
 
 ---
 
-[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](03-Installing-json.md) · [Next →](05-Creating-Advanced-json.md)
+[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](03-Installing-presets.md) · [Next →](05-Creating-Advanced-JSON-presets.md)
