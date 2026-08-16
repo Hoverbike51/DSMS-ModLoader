@@ -110,4 +110,4 @@ Profile format: **JSON v3**
 
 ---
 
-[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [Next →](02-Mod-Installation.md)
+[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [Next →](01-Overview.md)
