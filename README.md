@@ -1,4 +1,5 @@
 ![Cover](https://github.com/Hoverbike51/DSMS-ModLoader/blob/main/Previews/game_logo_mod_loader.png)
+![Cover2](https://github.com/Hoverbike51/DSMS-ModLoader/blob/main/Previews/ModLoader_0_7_open.jpg)
 
 <p align="center">
 <a href="https://www.patreon.com/cw/Hoverbike" rel="nofollow"><img src="https://camo.githubusercontent.com/0446eb970c25513ae0355aed04dce08e9f0d532218eb2fb0f85f34ff7e709e78/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f537570706f72742d50617472656f6e2d6f72616e67653f7374796c653d666f722d7468652d6261646765266c6f676f3d70617472656f6e266c696e6b3d68747470732533412532462532467777772e70617472656f6e2e636f6d2532466377253246486f76657262696b65" alt="Support on Patreon" data-canonical-src="https://img.shields.io/badge/Support-Patreon-orange?logo=patreon&amp;style=for-the-badge" style="max-width: 100%;"></a>
