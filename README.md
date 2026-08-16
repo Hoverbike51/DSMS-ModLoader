@@ -23,6 +23,12 @@ The guide is split into focused chapters so you can make mods and add them in Dr
 | [06 — Troubleshooting](https://github.com/Hoverbike51/DSMS-ModLoader/tree/main/Documentation/06-Troubleshooting.md) | Troubleshooting and Possible fix |
 | [EXTRA — Unreal Engine Route](https://github.com/Hoverbike51/DSMS-ModLoader/blob/main/Documentation/EXTRA/Unreal-Route-Full.md) | DragonSword Awakening Unreal 5.3 PAK Route |
 
+---
+>[!IMPORTANT]
+> Download the JSON presets needed for DSMS-Mod Loader [Here](Presets/DSMS_Official_Presets_v0.7.0.zip).
+>
+---
+
 ## Quick controls
 
 - **F5** — Open or close the selector after a playable world is loaded.
