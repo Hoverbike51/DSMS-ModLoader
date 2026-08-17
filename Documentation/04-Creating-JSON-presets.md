@@ -139,8 +139,8 @@ Example:
 }
 ```
 
-Use `Costume` for a playable-character outfit replacement.\
-Use `Custom` for a playable-custom character replacement.
+Use `COSTUME` for a playable-character outfit replacement.\
+Use `CUSTOM` for a playable-custom character replacement.
 
 > [!IMPORTANT]
 > `COSTUME` should be used for outfits of existing character. (vanilla or modded)\
@@ -153,10 +153,10 @@ Use `Custom` for a playable-custom character replacement.
 
 > [!NOTE]
 > `Astria Red Swimsuit` will be in `COSTUME` category, because it's a vanilla asset.\
-> `Castella Custom Body` will be in `CUSTOM` category, or COSTUME, it's up to you. \
+> `Castella Custom Body` will be in `CUSTOM` category, or `COSTUME`, it's up to you. \
 > `Any custom characters` will be in `CUSTOM` category, since these are characters that do not even exist in the base game.
 
-
+#### I know this might seem a little confusing, but once I figure out a better layout, it won't be a problem anymore.
 
 ### `TargetCharacterID`
 
