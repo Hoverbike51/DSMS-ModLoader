@@ -1,4 +1,3 @@
-![Cover](https://github.com/Hoverbike51/DSMS-ModLoader/blob/main/Previews/game_logo_mod_loader.png)
 ![Cover2](Previews/HMV_DSMS_ModLoader_cover_b.png)
 
 <p align="center">
