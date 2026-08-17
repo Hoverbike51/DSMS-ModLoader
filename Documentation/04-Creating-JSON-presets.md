@@ -123,11 +123,11 @@ Example:
 - Allowed values:
 
 ```text
-Costume
-Custom
-Weapon
-Mounts
-NPC
+COSTUME
+CUSTOM
+WEAPON
+DLC
+BASE GAME
 ```
 
 Example:
@@ -143,18 +143,18 @@ Use `Costume` for a playable-character outfit replacement.\
 Use `Custom` for a playable-custom character replacement.
 
 > [!IMPORTANT]
-> `Costume` should be used for outfits of existing character. (vanilla or modded)\
-> `Custom` must be used only for any new character added in the game. (That doesn't even exist in the base game)\
+> `COSTUME` should be used for outfits of existing character. (vanilla or modded)\
+> `CUSTOM` must be used only for any new character added in the game. (That doesn't even exist in the base game)\
 >  It also mean that any variants you'll made will stay in `Custom`
 > 
-> `Weapon` should be used for any weapon mod.\
-> `Mounts` should be used for any mounts mod.\
-> `NPC` should be used for any npc mod.
+> `WEAPON` should be used for any weapon mod.\
+> `DLC` should be used for any DLC.\
+> `BASE GAME` must be used only for vanilla asset.
 
 > [!NOTE]
-> `Astria Red Swimsuit` will be in `Costume` category, because it's a vanilla asset.\
-> `Castella Custom Body` will be in `Costume` category, even though it is a brand-new body, because it is intended for an existing character from the base game.\
-> `Any custom characters` will be in `Custom` category, since these are characters that do not even exist in the base game.
+> `Astria Red Swimsuit` will be in `COSTUME` category, because it's a vanilla asset.\
+> `Castella Custom Body` will be in `CUSTOM` category, or COSTUME, it's up to you. \
+> `Any custom characters` will be in `CUSTOM` category, since these are characters that do not even exist in the base game.
 
 
 
