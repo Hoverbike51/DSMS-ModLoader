@@ -1,9 +1,19 @@
 # DSMS-ModLoader — Changelog
 
-Current stable version: **0.7.0**  
+Current stable version: **0.7.1**  
 Target game: **DragonSword: Awakening**  
 Profile format: **JSON v3**
 
+
+## 0.7.1 — Outline safety and Studio compatibility (August 20, 2026)
+
+- Added generalized JSON v3 `BodyOutlinePath`, `BodyOutlineMaterials` and `BodyOutlineClearMaterialOverrides` support for dedicated parallel body-outline meshes.
+- Preserved author-selected `PhysicsAnimBlueprintPath` values without character-specific substitution.
+- Fixed rejected-target handling so an incompatible preset can no longer clean up the appearance that is already active.
+- Added safe world-transition state disposal for body outlines, auxiliary meshes, hidden/linked components, morph caches, followers and pending animation verification.
+- Synchronized the runtime contract with DSMS Preset Studio v0.5.2, including `WeaponMaterials.MaterialMatch` selectors.
+- Documented the Studio's optional FModel asset index: vanilla paths can be checked against exported game assets, while custom `/Game/MODS/` paths remain author-controlled and are reported as unverified when absent from the index.
+- Kept Studio repair non-destructive for custom presets. Known-character references may produce explicit suggestions and safe syntax normalization, but validation never replaces an author's preset by filename, `UniqueID`, or database recipe.
 
 ## 0.7.0 — Stable modular release
 
