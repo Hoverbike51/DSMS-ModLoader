@@ -5,7 +5,7 @@ Target game: **DragonSword: Awakening**
 Profile format: **JSON v3**
 
 
-## 0.7.1 — Outline safety and Studio compatibility (August 20, 2026)
+## 0.7.1 — Outline safety and Studio compatibility
 
 - Added generalized JSON v3 `BodyOutlinePath`, `BodyOutlineMaterials` and `BodyOutlineClearMaterialOverrides` support for dedicated parallel body-outline meshes.
 - Preserved author-selected `PhysicsAnimBlueprintPath` values without character-specific substitution.
