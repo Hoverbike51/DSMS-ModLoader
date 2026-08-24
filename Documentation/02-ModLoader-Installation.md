@@ -54,5 +54,5 @@ DragonSword  Awakening/DS/Binaries/Win64/ue4ss/Mods/
 ---
 
 
-[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](01-Overview.md) · [Next →](03-Installing-json.md)
+[← Guide Home](https://github.com/Hoverbike51/DSMS-ModLoader) · [← Previous](01-Overview.md) · [Next →](03-Installing-presets.md)
   
