@@ -546,6 +546,87 @@ Example:
 
 ```
 
+## 4.4 Important JSON fields
+
+| Field | Purpose |
+|---|---|
+| `Version` | Must be `3` for this guide. |
+| `UniqueID` | Stable unique identifier; do not reuse it for another preset. |
+| `DisplayName` | Text shown in the DSMS menu. |
+| `Type` | Use `Costume` or `Custom` for this guide. |
+| `TargetCharacterID` | Exact intended playable character ID. Use the matching character for a public release. |
+| `Requirements` | Metadata array. `None` means no declared requirement; DSMS 0.7.1 does not enforce DLC ownership through this field. |
+| `PhysicsAssetPath` | Body Physics Asset object path. |
+| `PhysicsAnimBlueprintPath` | Exact physics Anim Blueprint selected by the author. DSMS accepts a package path, Blueprint object path, or generated class path and normalizes it to `_C`. Use `None` or omit the field to remove the previous linked physics class. |
+| `FaceMorphPath` | In-game face Skeletal Mesh with Morph Targets. |
+| `FacePath` | Optional secondary face Skeletal Mesh. Omit the property when unused. |
+| `FaceMaterials` | Zero-based face material overrides. |
+| `FaceMorphTargets` | One or more face Morph Target names and values. |
+| `BodyPath` | Custom body Skeletal Mesh object path. |
+| `BodyOutlinePath` | Optional dedicated outline Skeletal Mesh loaded in parallel with `BodyPath`. |
+| `BodyMaterials` | Zero-based body material overrides. |
+| `BodyOutlineMaterials` | Zero-based Material Instance overrides for the dedicated body-outline mesh. |
+| `BodyOutlineClearMaterialOverrides` | Clears stale outline overrides before applying `BodyOutlineMaterials`. |
+| `BodyMorphTargets` | One or more body Morph Target names and values. |
+| `IconPath` | Texture object path used by the preset. |
+
+Use JSON syntax exactly:
+
+- Double quotes around keys and strings.
+- No comments.
+- No trailing comma after the last property or array item.
+- Decimal values such as `1.0` for Morph Targets.
+- Forward slashes in every Unreal object path.
+
+## 4.5 Author-controlled physics Animation Blueprint
+
+`PhysicsAnimBlueprintPath` is authoritative. DSMS no longer substitutes another character-specific
+class when the requested path cannot be loaded. The following forms are accepted and normalized to
+the same generated class:
+
+```text
+/Game/Design/.../DsABP_Custom_Physics
+/Game/Design/.../DsABP_Custom_Physics.DsABP_Custom_Physics
+/Game/Design/.../DsABP_Custom_Physics.DsABP_Custom_Physics_C
+AnimBlueprintGeneratedClass /Game/Design/.../DsABP_Custom_Physics.DsABP_Custom_Physics_C
+```
+
+Use `"PhysicsAnimBlueprintPath": "None"`, an empty value, or omit the property to unlink the
+physics class used by the previous profile and retain the character's default animation setup.
+The selected class must still be compatible with the active character's Anim Instance and its
+linked Animation Layer interfaces. Accepting an arbitrary path does not make incompatible
+skeletons or Animation Blueprints compatible.
+
+The JSON value remains author-controlled. Validate the selected costume's secondary physics and
+then switch back to its base outfit several times before publishing the preset. Preset Studio may
+normalize the syntax, but it does not substitute a different character-specific class.
+
+## 4.6 Validate with DSMS Preset Studio and an optional FModel index
+
+DSMS Preset Studio 0.5.2 is the recommended JSON v3 authoring companion. It is optional and is
+not required to run DSMS-ModLoader. The Studio can normalize safe syntax, detect malformed JSON,
+check required fields and compare vanilla `/Game/...` references with an index built from an
+FModel export folder.
+
+Recommended validation workflow:
+
+1. In Studio Settings, select the FModel export directory that contains `DS/Content`.
+2. Rebuild the asset index manually after exporting or updating game assets.
+3. Open the preset and run **Validate & repair**.
+4. Review every proposed repair before saving; repairs remain unsaved until the author accepts them.
+5. Test the saved preset in game in both directions: custom-to-base and base-to-custom.
+
+Important boundaries:
+
+- The FModel index is strong evidence for vanilla assets, but it is not mandatory.
+- A custom `/Game/MODS/...` asset may be valid even when it is absent from the FModel index. Studio
+  reports it as unverified instead of replacing it with a vanilla database reference.
+- Studio never replaces a custom preset because its filename or `UniqueID` resembles a known preset.
+- For ordinary Unreal object paths, the package and object names normally match:
+  `/Game/Folder/Asset.Asset`. A mismatch is reported as a likely typo, not silently guessed.
+- Validation cannot prove Skeleton, Physics Asset or Animation Blueprint compatibility. Final
+  confirmation always requires an in-game test.
+
 # Distribution
 
 > [!IMPORTANT]
