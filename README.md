@@ -26,7 +26,9 @@ The guide is split into focused chapters so you can make mods and add them in Dr
 
 ---
 >[!IMPORTANT]
-> Download the JSON presets needed for DSMS-Mod Loader [Here](Presets/DSMS_Official_Presets_v0.7.0.zip).
+> Download the JSON presets needed for DSMS-Mod Loader [Here](Presets/DSMS_Official_Presets_v0.7.1.zip) (latest).\
+>\
+>[v0.7.0](Presets/DSMS_Official_Presets_v0.7.0.zip)
 >
 ---
 
@@ -34,3 +36,9 @@ The guide is split into focused chapters so you can make mods and add them in Dr
 
 - **F5** — Open or close the selector after a playable world is loaded.
 - **F6** — Rescan the JSON preset library.
+
+---
+## Others Tools
+[DSMS Preset Studio](https://github.com/Hoverbike51/DSMS-Preset-Studio) is a Windows desktop application for creating, reviewing and validating DragonSword: Awakening presets for DSMS ModLoader.
+
+---
