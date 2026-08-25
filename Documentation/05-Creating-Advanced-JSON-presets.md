@@ -334,83 +334,100 @@ Some presets use a standard mesh for the body and face, as well as a body and fa
 ```json
 {
   "Version": 3,
-  "UniqueID": "Onette_Player",
-  "DisplayName": "Ornette - Main Outfit [Costume Base]",
+  "UniqueID": "ExampleCharacter_MainCostume",
+  "DisplayName": "Example Character - Main Outfit [Costume Base]",
   "Type": "Costume",
-  "TargetCharacterID": "Onette",
+  "TargetCharacterID": "ExampleCharacter",
+
   "Requirements": [
     "None"
   ],
-  "PhysicsAssetPath": "/Game/Art/Character/Player/DS_Onette/Meshs/ch_onette_mesh_body_PhysicsAsset.ch_onette_mesh_body_PhysicsAsset",
-  "PhysicsAnimBlueprintPath": "/Game/Design/DsCharacter/DsPhysics/PC/Onette/DsABP_Onette_Physics_Costume.DsABP_Onette_Physics_Costume_C",
-  "FaceMorphPath": "/Game/Art/Character/Player/DS_Onette/Meshs/ch_onette_ingame_face_mesh.ch_onette_ingame_face_mesh",
-  "FacePath": "/Game/Art/Character/Player/DS_Onette/Meshs/ch_onette_face_mesh.ch_onette_face_mesh",
-  "FaceOutlinePath": "/Game/Art/Character/Player/DS_Onette/meshs/ch_onette_ingame_face_mesh_outline.ch_onette_ingame_face_mesh_outline",
+
+  "PhysicsAssetPath": "/Game/Example/Character/Meshes/example_body_PhysicsAsset.example_body_PhysicsAsset",
+  "PhysicsAnimBlueprintPath": "/Game/Example/Character/Blueprints/ABP_Example_Physics_Costume.ABP_Example_Physics_Costume_C",
+
+  "FaceMorphPath": "/Game/Example/Character/Meshes/example_ingame_face_mesh.example_ingame_face_mesh",
+  "FacePath": "/Game/Example/Character/Meshes/example_face_mesh.example_face_mesh",
+
+  "FaceOutlinePath": "/Game/Example/Character/Meshes/example_ingame_face_mesh_outline.example_ingame_face_mesh_outline",
+
   "FaceOutlineClearMaterialOverrides": true,
+
   "FaceOutlineMaterials": [
     {
       "SlotIndex": 0,
-      "MaterialPath": "/Game/Art/Character/Material/outline_face_mi.outline_face_mi"
+      "MaterialPath": "/Game/Example/Materials/example_face_outline_mi.example_face_outline_mi"
     },
     {
       "SlotIndex": 1,
-      "MaterialPath": "/Game/Art/Character/Material/outline_face_mi.outline_face_mi"
+      "MaterialPath": "/Game/Example/Materials/example_face_outline_mi.example_face_outline_mi"
     }
   ],
+
   "FaceClearMaterialOverrides": true,
+
   "FaceMaterials": [
     {
       "SlotIndex": 0,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_face_mi.ch_onette_face_mi"
+      "MaterialPath": "/Game/Example/Character/Materials/example_face_mi.example_face_mi"
     },
     {
       "SlotIndex": 1,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_eye_mi.ch_onette_eye_mi"
+      "MaterialPath": "/Game/Example/Character/Materials/example_eye_mi.example_eye_mi"
     }
   ],
+
   "FaceMorphTargets": [],
-  "BodyPath": "/Game/Art/Character/Player/DS_Onette/Meshs/ch_onette_mesh_body.ch_onette_mesh_body",
-  "BodyOutlinePath": "/Game/Art/Character/Player/DS_Onette/meshs/ch_onette_mesh_body_outline.ch_onette_mesh_body_outline",
+
+  "BodyPath": "/Game/Example/Character/Meshes/example_body_mesh.example_body_mesh",
+
+  "BodyOutlinePath": "/Game/Example/Character/Meshes/example_body_mesh_outline.example_body_mesh_outline",
+
   "BodyOutlineClearMaterialOverrides": true,
+
   "BodyOutlineMaterials": [
     {
       "SlotIndex": 0,
-      "MaterialPath": "/Game/Art/Character/Material/outline_ch_cine_hair_mi.outline_ch_cine_hair_mi"
+      "MaterialPath": "/Game/Example/Materials/example_hair_outline_mi.example_hair_outline_mi"
     },
     {
       "SlotIndex": 1,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/outline/ch_onnette_outline_mi.ch_onnette_outline_mi"
+      "MaterialPath": "/Game/Example/Materials/example_body_outline_mi.example_body_outline_mi"
     },
     {
       "SlotIndex": 2,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/outline/ch_onnette_outline_mi.ch_onnette_outline_mi"
+      "MaterialPath": "/Game/Example/Materials/example_body_outline_mi.example_body_outline_mi"
     },
     {
       "SlotIndex": 3,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/outline/ch_onnette_outline_mi.ch_onnette_outline_mi"
+      "MaterialPath": "/Game/Example/Materials/example_body_outline_mi.example_body_outline_mi"
     }
   ],
+
   "BodyClearMaterialOverrides": true,
+
   "BodyMaterials": [
     {
       "SlotIndex": 0,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_hair_mi.ch_onette_hair_mi"
+      "MaterialPath": "/Game/Example/Character/Materials/example_hair_mi.example_hair_mi"
     },
     {
       "SlotIndex": 1,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_skin_mi.ch_onette_skin_mi"
+      "MaterialPath": "/Game/Example/Character/Materials/example_skin_mi.example_skin_mi"
     },
     {
       "SlotIndex": 2,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_top_mi.ch_onette_top_mi"
+      "MaterialPath": "/Game/Example/Character/Materials/example_top_mi.example_top_mi"
     },
     {
       "SlotIndex": 3,
-      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_bot_mi.ch_onette_bot_mi"
+      "MaterialPath": "/Game/Example/Character/Materials/example_bottom_mi.example_bottom_mi"
     }
   ],
+
   "BodyMorphTargets": [],
-  "IconPath": "/Game/Art/UI/InGame/Img_Character/Signal/Img_Character_Signal_Onette.Img_Character_Signal_Onette"
+
+  "IconPath": "/Game/Example/UI/Icons/Img_Character_Example.Img_Character_Example"
 }
 ```
 
