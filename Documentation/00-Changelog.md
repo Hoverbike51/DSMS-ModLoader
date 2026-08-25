@@ -1,6 +1,6 @@
 # DSMS-ModLoader — Changelog
 
-Current stable version: **0.7.1**  
+Current stable version: **0.7.2**  
 Target game: **DragonSword: Awakening**  
 Profile format: **JSON v3**
 
