@@ -26,8 +26,9 @@ The guide is split into focused chapters so you can make mods and add them in Dr
 
 ---
 >[!IMPORTANT]
-> Download the JSON presets needed for DSMS-Mod Loader [Here](Presets/DSMS_Official_Presets_v0.7.1.zip) (latest).\
+> Download the JSON presets needed for DSMS-Mod Loader [Here](Presets/DSMS_Official_Presets_v0.7.2.zip) (latest).\
 >\
+>[v0.7.1](Presets/DSMS_Official_Presets_v0.7.1.zip)
 >[v0.7.0](Presets/DSMS_Official_Presets_v0.7.0.zip)
 >
 ---
