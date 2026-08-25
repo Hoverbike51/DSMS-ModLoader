@@ -327,7 +327,95 @@ Create two independent JSON files with different `UniqueID` values. The safest n
 
 Do not create a no-mask preset by guessing which body material slot contains the mask. A mask can be geometry inside another section, an auxiliary mesh, or a separate outline component. Inspect the original assets first.
 
-## 5.8 Face materials and Morph Target variants
+## 5.8 Custom Body and Face Outline
+
+Some presets use a standard mesh for the body and face, as well as a body and face outline. If you don't apply them, the pose may not display correctly, or the game may even crash.
+
+```json
+{
+  "Version": 3,
+  "UniqueID": "Onette_Player",
+  "DisplayName": "Ornette - Main Outfit [Costume Base]",
+  "Type": "Costume",
+  "TargetCharacterID": "Onette",
+  "Requirements": [
+    "None"
+  ],
+  "PhysicsAssetPath": "/Game/Art/Character/Player/DS_Onette/Meshs/ch_onette_mesh_body_PhysicsAsset.ch_onette_mesh_body_PhysicsAsset",
+  "PhysicsAnimBlueprintPath": "/Game/Design/DsCharacter/DsPhysics/PC/Onette/DsABP_Onette_Physics_Costume.DsABP_Onette_Physics_Costume_C",
+  "FaceMorphPath": "/Game/Art/Character/Player/DS_Onette/Meshs/ch_onette_ingame_face_mesh.ch_onette_ingame_face_mesh",
+  "FacePath": "/Game/Art/Character/Player/DS_Onette/Meshs/ch_onette_face_mesh.ch_onette_face_mesh",
+  "FaceOutlinePath": "/Game/Art/Character/Player/DS_Onette/meshs/ch_onette_ingame_face_mesh_outline.ch_onette_ingame_face_mesh_outline",
+  "FaceOutlineClearMaterialOverrides": true,
+  "FaceOutlineMaterials": [
+    {
+      "SlotIndex": 0,
+      "MaterialPath": "/Game/Art/Character/Material/outline_face_mi.outline_face_mi"
+    },
+    {
+      "SlotIndex": 1,
+      "MaterialPath": "/Game/Art/Character/Material/outline_face_mi.outline_face_mi"
+    }
+  ],
+  "FaceClearMaterialOverrides": true,
+  "FaceMaterials": [
+    {
+      "SlotIndex": 0,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_face_mi.ch_onette_face_mi"
+    },
+    {
+      "SlotIndex": 1,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_eye_mi.ch_onette_eye_mi"
+    }
+  ],
+  "FaceMorphTargets": [],
+  "BodyPath": "/Game/Art/Character/Player/DS_Onette/Meshs/ch_onette_mesh_body.ch_onette_mesh_body",
+  "BodyOutlinePath": "/Game/Art/Character/Player/DS_Onette/meshs/ch_onette_mesh_body_outline.ch_onette_mesh_body_outline",
+  "BodyOutlineClearMaterialOverrides": true,
+  "BodyOutlineMaterials": [
+    {
+      "SlotIndex": 0,
+      "MaterialPath": "/Game/Art/Character/Material/outline_ch_cine_hair_mi.outline_ch_cine_hair_mi"
+    },
+    {
+      "SlotIndex": 1,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/outline/ch_onnette_outline_mi.ch_onnette_outline_mi"
+    },
+    {
+      "SlotIndex": 2,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/outline/ch_onnette_outline_mi.ch_onnette_outline_mi"
+    },
+    {
+      "SlotIndex": 3,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/outline/ch_onnette_outline_mi.ch_onnette_outline_mi"
+    }
+  ],
+  "BodyClearMaterialOverrides": true,
+  "BodyMaterials": [
+    {
+      "SlotIndex": 0,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_hair_mi.ch_onette_hair_mi"
+    },
+    {
+      "SlotIndex": 1,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_skin_mi.ch_onette_skin_mi"
+    },
+    {
+      "SlotIndex": 2,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_top_mi.ch_onette_top_mi"
+    },
+    {
+      "SlotIndex": 3,
+      "MaterialPath": "/Game/Art/Character/Player/DS_Onette/materials/ch_onette_bot_mi.ch_onette_bot_mi"
+    }
+  ],
+  "BodyMorphTargets": [],
+  "IconPath": "/Game/Art/UI/InGame/Img_Character/Signal/Img_Character_Signal_Onette.Img_Character_Signal_Onette"
+}
+```
+
+
+## 5.9 Face materials and Morph Target variants
 
 The complete example in section 10.1 already demonstrates all supported face/body customization fields:
 
@@ -353,7 +441,7 @@ Both Morph Target arrays accept several entries, with unique names and values fr
 
 The fragment above documents the two arrays; it is not a complete preset by itself. Omit an unused array or use an empty array. Never publish Morph Target names that do not exist on the selected mesh.
 
-## 5.9 Correction-field reference
+## 5.10 Correction-field reference
 
 | Field | Accepted value | Effect and release rule |
 |---|---|---|
@@ -361,7 +449,9 @@ The fragment above documents the two arrays; it is not a complete preset by itse
 | `BodyOutlinePath` | Full Skeletal Mesh object path | Loads a dedicated body-outline mesh in parallel with `BodyPath`. |
 | `BodyOutlineClearMaterialOverrides` | Boolean | Clears stale outline overrides before applying `BodyOutlineMaterials`. |
 | `BodyOutlineMaterials` | Material override array | Applies zero-based Material Instance slots to the dedicated body-outline mesh. |
+| `FaceOutlinePath` | Full Skeletal Mesh object path | Loads a dedicated face-outline mesh in parallel with `FacePath`. |
 | `FaceClearMaterialOverrides` | Boolean | Clears face overrides before applying `FaceMaterials`. |
+| `FaceOutlineMaterials` | Material override array | Applies zero-based Material Instance slots to the dedicated face-outline mesh. |
 | `WeaponClearMaterialOverrides` | Boolean | Clears weapon overrides before applying `WeaponMaterials`. |
 | `AuxiliaryClearMaterialOverrides` | Boolean | Clears overrides on the auxiliary component before applying `AuxiliaryMaterials`. |
 | `WeaponMaterialsOnly` | Boolean | Keeps native weapon meshes and changes materials only. When `true`, `WeaponPath` and `WeaponPaths` may be omitted. |
@@ -377,7 +467,7 @@ The fragment above documents the two arrays; it is not a complete preset by itse
 | `FaceMorphTargets` | Array of name/value objects | Applies face Morph Targets after the face mesh is installed. |
 | `BodyMorphTargets` | Array of name/value objects | Applies body Morph Targets after the body mesh is installed. |
 
-## 5.10 Stability rules learned from corrected presets
+## 5.11 Stability rules learned from corrected presets
 
 - Always use a unique `UniqueID`, including mask/no-mask and retexture variants.
 - Keep `TargetCharacterID` protection enabled while creating public presets. Cross-character application can produce an A-pose, wrong proportions, persistent components or a crash.
