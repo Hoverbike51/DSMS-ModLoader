@@ -4,6 +4,12 @@ Current stable version: **0.7.1**
 Target game: **DragonSword: Awakening**  
 Profile format: **JSON v3**
 
+## 0.7.2 — Validated Body/Face Outline channels
+
+- Added JSON v3 `FaceOutlinePath`, `FaceOutlineMaterials` and `FaceOutlineClearMaterialOverrides` support parallel to the existing body-outline channel.
+- Confirmed stable simultaneous `BodyOutlinePath` and `FaceOutlinePath` loading with an explicit Material Instance assigned to every outline slot.
+- Improve Ornette outline compatibility
+- Deferred body-outline creation by two game-thread polls when a face outline is also requested, preventing two skeletal outline actors from rebuilding in the same UE 5.3 frame.
 
 ## 0.7.1 — Outline safety and Studio compatibility
 
