@@ -21,52 +21,60 @@ DSMS-HMV_Awaken_Lute_Costume_Base.json
 ```json
 {
   "Version": 3,
-  "UniqueID": "author_character_costume_name",
+  "UniqueID": "character_costume_unique_id",
   "DisplayName": "Character - Costume Name",
+  "PresetName": "Character",
+  "PresetVariant": "Costume Name",
   "Type": "Costume",
   "TargetCharacterID": "CharacterID",
   "Requirements": ["None"],
 
-  "PhysicsAssetPath": "/Game/mods/Mod_Author/Mod_Name/Mesh/SK_Body_PhysicsAsset.SK_Body_PhysicsAsset",
-  "PhysicsAnimBlueprintPath": "/Game/Design/DsCharacter/DsPhysics/PC/Character/DsABP_Character_Costume_Physics.DsABP_Character_Costume_Physics_C",
+  "PhysicsAssetPath": "/Game/MODS/ModAuthor/ModName/Mesh/SK_Body_PhysicsAsset.SK_Body_PhysicsAsset",
+  "PhysicsAnimBlueprintPath": "/Game/Path/To/ABP_Costume_Physics.ABP_Costume_Physics_C",
 
-  "FaceMorphPath": "/Game/Art/Character/Player/DS_Character/Meshs/ch_Character_ingame_face_mesh.ch_Character_ingame_face_mesh",
-  "FacePath": "/Game/Art/Character/Player/DS_Character/Meshs/ch_Character_mesh_face.ch_Character_mesh_face",
+  "FaceMorphPath": "/Game/MODS/ModAuthor/ModName/Mesh/SK_Ingame_Face.SK_Ingame_Face",
   "FaceClearMaterialOverrides": true,
   "FaceMaterials": [
     {
       "SlotIndex": 0,
-      "MaterialPath": "/Game/mods/Mod_Author/Mod_Name/Materials/MI_Face.MI_Face"
+      "MaterialPath": "/Game/MODS/ModAuthor/ModName/Materials/MI_Face.MI_Face"
     },
     {
       "SlotIndex": 1,
-      "MaterialPath": "/Game/mods/Mod_Author/Mod_Name/Materials/MI_Eyes.MI_Eyes"
+      "MaterialPath": "/Game/MODS/ModAuthor/ModName/Materials/MI_Eyes.MI_Eyes"
     }
   ],
   "FaceMorphTargets": [
     {
       "MorphName": "costume_morph_name",
-      "Value": 1.0
+      "Value": 1.0,
+      "Description": "Fixed face morph required by this costume.",
+      "Locked": true
     }
   ],
 
-  "BodyPath": "/Game/mods/Mod_Author/Mod_Name/Mesh/SK_Body.SK_Body",
+  "BodyPath": "/Game/MODS/ModAuthor/ModName/Mesh/SK_Body.SK_Body",
   "BodyClearMaterialOverrides": true,
   "BodyMaterials": [
     {
       "SlotIndex": 0,
-      "MaterialPath": "/Game/mods/Mod_Author/Mod_Name/Materials/MI_Body.MI_Body"
+      "MaterialPath": "/Game/MODS/ModAuthor/ModName/Materials/MI_Costume.MI_Costume"
     }
   ],
   "BodyMorphTargets": [
     {
-      "MorphName": "body_morph_name",
-      "Value": 1.0
+      "MorphName": "costume_body_morph_name",
+      "Value": 1.0,
+      "Description": "Adjusts the custom body shape.",
+      "Min": -1.5,
+      "Max": 3.0,
+      "Locked": false
     }
   ],
 
-  "IconPath": "/Game/mods/Mod_Author/Mod_Name/Icons/T_Icon.T_Icon"
+  "CharacterIconPath": "/Game/MODS/HoverModsVault/DSDataBase/UI/Characters/Default_Costume.Default_Costume"
 }
+
 ```
 
 
@@ -114,6 +122,34 @@ Example:
 ```json
 {
   "DisplayName": "Astria - Red Swimsuit"
+}
+```
+
+### `PresetName`
+
+- Required: yes
+- This is the readable name shown in the details panel.
+
+Example:
+
+
+```json
+{
+  "PresetName": "Astria"
+}
+```
+
+### `PresetVariant`
+
+- Required: yes
+- This is the readable name shown in the details panel.
+
+Example:
+
+
+```json
+{
+  "PresetVariant": "Red Swimsuit"
 }
 ```
 
