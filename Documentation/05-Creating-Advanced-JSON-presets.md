@@ -336,6 +336,8 @@ Some presets use a standard mesh for the body and face, as well as a body and fa
   "Version": 3,
   "UniqueID": "ExampleCharacter_MainCostume",
   "DisplayName": "Example Character - Main Outfit [Costume Base]",
+  "PresetName": "Character",
+  "PresetVariant": "Costume Name",
   "Type": "Costume",
   "TargetCharacterID": "ExampleCharacter",
 
@@ -425,9 +427,18 @@ Some presets use a standard mesh for the body and face, as well as a body and fa
     }
   ],
 
-  "BodyMorphTargets": [],
+  "BodyMorphTargets": [
+    {"MorphName": "costume_body_morph_name",
+      "Value": 1.0,
+      "Description": "Adjusts the custom body shape.",
+      "Min": -1.5,
+      "Max": 3.0,
+      "Locked": false
+    }
+  ],
 
-  "IconPath": "/Game/Example/UI/Icons/Img_Character_Example.Img_Character_Example"
+
+  "CharacterIconPath": "/Game/MODS/HoverModsVault/DSDataBase/UI/Characters/Default_Costume.Default_Costume"
 }
 ```
 
@@ -444,16 +455,24 @@ The complete example in section 10.1 already demonstrates all supported face/bod
 Both Morph Target arrays accept several entries, with unique names and values from `0.0` to `1.0`:
 
 ```json
-{
   "FaceMorphTargets": [
-    { "MorphName": "makeup_variant", "Value": 1.0 },
-    { "MorphName": "eye_shape_soft", "Value": 0.65 }
+    {"MorphName": "face_body_morph_name",
+      "Value": 1.0,
+      "Description": "Adjusts the custom face shape.",
+      "Min": -1.5,
+      "Max": 3.0,
+      "Locked": false
+    }
   ],
   "BodyMorphTargets": [
-    { "MorphName": "body_shape_a", "Value": 0.8 },
-    { "MorphName": "cloth_adjust", "Value": 1.0 }
-  ]
-}
+    {"MorphName": "costume_body_morph_name",
+      "Value": 1.0,
+      "Description": "Adjusts the custom body shape.",
+      "Min": -1.5,
+      "Max": 3.0,
+      "Locked": false
+    }
+  ],
 ```
 
 The fragment above documents the two arrays; it is not a complete preset by itself. Omit an unused array or use an empty array. Never publish Morph Target names that do not exist on the selected mesh.
