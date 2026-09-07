@@ -36,7 +36,28 @@ DragonSword  Awakening/DS/Content/Paks/LogicMods/HMV_DS_MeshSelector_UI.pak
 > LogicMods uses a `.pak` file only.
 
 
-## 2.3 Install the DSMS-ModLoader scripts dependencies
+## 2.3 Install DATABASE (~mods)
+
+Copy:
+
+```text
+DSMS_HMV_899_DATABASE.pak
+```
+
+to:
+
+```text
+DragonSword  Awakening/DS/Content/Paks/~mods/
+```
+
+The final path must be:
+
+```text
+DragonSword  Awakening/DS/Content/Paks/~mods/DSMS_HMV_899_DATABASE.pak
+```
+
+
+## 2.4 Install the DSMS-ModLoader scripts dependencies
 
 Copy the complete folder:
 
