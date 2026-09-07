@@ -608,7 +608,8 @@ Example:
 | `BodyOutlineMaterials` | Zero-based Material Instance overrides for the dedicated body-outline mesh. |
 | `BodyOutlineClearMaterialOverrides` | Clears stale outline overrides before applying `BodyOutlineMaterials`. |
 | `BodyMorphTargets` | One or more body Morph Target names and values. |
-| `IconPath` | Texture object path used by the preset. |
+| `CharacterIconPath` | Texture object path used by the preset. |
+| `WeaponIconPath` | Texture object path used by the preset. |
 
 Use JSON syntax exactly:
 
