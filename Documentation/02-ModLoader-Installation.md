@@ -10,6 +10,7 @@ DragonSword  Awakening/DS/Binaries/Win64/
 
 After installation, this directory must contain the UE4SS loader and a folder named `ue4ss`.
 
+---
 ## 2.2 Install DSMS-ModLoader (LogicMods)
 
 Copy:
@@ -35,7 +36,7 @@ DragonSword  Awakening/DS/Content/Paks/LogicMods/HMV_DS_MeshSelector_UI.pak
 > This Blueprint component belongs in `LogicMods`, not directly in `~mods`.
 > LogicMods uses a `.pak` file only.
 
-
+---
 ## 2.3 Install DATABASE (~mods)
 
 Copy:
@@ -56,7 +57,7 @@ The final path must be:
 DragonSword  Awakening/DS/Content/Paks/~mods/DSMS_HMV_899_DATABASE.pak
 ```
 
-
+---
 ## 2.4 Install the DSMS-ModLoader scripts dependencies
 
 Copy the complete folder:
