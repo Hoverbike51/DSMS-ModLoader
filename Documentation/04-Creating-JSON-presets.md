@@ -512,8 +512,8 @@ Example:
 
 Do not declare the same morph name more than once in the same array.
 
-> [!WARNING]
-> It is not yet possible to change the “morph target” value from the mod's menu; you must edit this value directly in the JSON file.
+> [!NOTE]
+> It is now possible to change the “morph target” value from the mod's details panel
 
 ## 4.3 Final JSON for Astria Red Swimsuit
 
@@ -524,6 +524,8 @@ Example:
   "Version": 3,
   "UniqueID": "hovermodsvault_astria_swimsuit_red",
   "DisplayName": "Astria - Red Swimsuit",
+  "PresetName": "Astria",
+  "PresetVariant": "Red Swimsuit",
   "Type": "Costume",
   "TargetCharacterID": "Astria",
   "Requirements": ["None"],
@@ -589,6 +591,8 @@ Example:
 | `Version` | Must be `3` for this guide. |
 | `UniqueID` | Stable unique identifier; do not reuse it for another preset. |
 | `DisplayName` | Text shown in the DSMS menu. |
+| `PresetName` | Text shown in the DSMS menu details panel or omit the field tu re-use `DisplayName` instead without text in [] |
+| `PresetVariant` | Text shown in the DSMS menu. details panel or omit the field to hide the text |
 | `Type` | Use `Costume` or `Custom` for this guide. |
 | `TargetCharacterID` | Exact intended playable character ID. Use the matching character for a public release. |
 | `Requirements` | Metadata array. `None` means no declared requirement; DSMS 0.7.1 does not enforce DLC ownership through this field. |
