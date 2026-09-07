@@ -1,8 +1,20 @@
 # DSMS-ModLoader — Changelog
 
-Current stable version: **0.7.2**  
+Current stable version: **0.8.0**  
 Target game: **DragonSword: Awakening**  
 Profile format: **JSON v3**
+
+## 0.8 — Simple / Modern Dark interface and live preset controls
+
+- Added a separate dynamic preset-details panel with the selected preset name, variant, type, and character-icon preview.
+- Added optional JSON v3 PresetName and PresetVariant metadata for the Details panel.
+- Uses CharacterIconPath for non-Weapon presets and WeaponIconPath for Weapon presets; legacy icon aliases and older Weapon CharacterIconPath values remain readable.
+- Bundled preset icon references to the shared HoverMods Vault DSDataBase PAK file, with dedicated Character and Weapon UI folders.
+- Added live, session-only Body and Face Morph Target sliders. Slider changes never rewrite the source JSON and return to its Value after a game restart.
+- Added per-morph JSON metadata: optional Min, Max, Locked, and Description. Locked morphs are applied but hidden from the in-game controls.
+- Added Reset All for visible unlocked morphs, restoring the selected preset's JSON values for the current session.
+- Added hover tooltips and overflow scrolling for long Morph Target names.
+- Added a general interface-opacity control and a bounded draggable main panel.
 
 ## 0.7.2 — Validated Body/Face Outline channels
 
