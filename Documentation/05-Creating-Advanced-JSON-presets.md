@@ -468,7 +468,7 @@ The complete example in section 10.1 already demonstrates all supported face/bod
 - `BodyMorphTargets` for one or several body Morph Targets.
 - `FacePath` for the optional secondary face mesh.
 
-Both Morph Target arrays accept several entries, with unique names and values from `0.0` to `1.0`:
+Both Morph Target arrays accept several entries, with unique names and values from `Min` to `Max`:
 
 ```json
   "FaceMorphTargets": [
