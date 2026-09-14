@@ -13,7 +13,7 @@ Any folder created below that directory is scanned. This allows authors and user
 ## DSMS-Mod Loader version
 
 ```text
-0.7.1
+0.8.0
 ```
 
 ### JSON schema
