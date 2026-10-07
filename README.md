@@ -42,5 +42,5 @@ The guide is split into focused chapters so you can make mods and add them in Dr
 ---
 ## Others Tools
 [DSMS Preset Studio](https://github.com/Hoverbike51/DSMS-Preset-Studio) is a Windows desktop application for creating, reviewing and validating DragonSword: Awakening presets for DSMS ModLoader.
-
+[HMV Injector](https://github.com/Hoverbike51/HMV-Injector) is a .NET 8 Windows injector using a Control Panel design. It only accepts DLLs listed in a manifest signed by HoverMods Vault.
 ---
