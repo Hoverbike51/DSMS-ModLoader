@@ -1,8 +1,15 @@
 # DSMS-ModLoader — Changelog
 
-Current stable version: **0.8.0**  
+Current stable version: **0.8.1**  
 Target game: **DragonSword: Awakening**  
 Profile format: **JSON v3**
+
+## 0.8.1 — Optimisation Improvements
+
+- Integrated Details metadata and icon handling.
+- Weapon visibility and guarded action-source behavior.
+- Preset presentation metadata and current schema-3 compatibility behavior.
+- optimisation improvements
 
 ## 0.8 — Simple / Modern Dark interface and live preset controls
 
